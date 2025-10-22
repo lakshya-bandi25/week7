@@ -11,3 +11,4 @@ spec:
       targetPort: 5000 # Flask app port inside container
       nodePort: 30085 # NodePort (range 30000-32767)
   type: NodePort
+  

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Addition</title>
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById("num1").value) || 0;
+      const num2 = parseFloat(document.getElementById("num2").value) || 0;
+      const sum = num1 + num2;
+      document.getElementById("result").innerText = sum;
+    }
+  </script>
+</head>
+<body>
+  <h2>Add Two Numbers</h2>
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1" placeholder="Enter first number"><br><br>
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2" placeholder="Enter second number"><br><br>
+  <button onclick="calculate()">Add</button><br><br>
+  <p>Result: <span id="result"></span></p>
+</body>
+</html>
